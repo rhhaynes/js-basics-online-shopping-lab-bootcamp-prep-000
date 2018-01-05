@@ -56,8 +56,7 @@ function total() {
 function removeFromCart(item) {
   var itemNotFound = 1;
   for (let i=0; i<cart.length; i++){
-    console.log(cart[i]);
-    if (Object.keys(cart[i])===item){
+    if (item===Object.keys(cart[i])){
       itemNotFound = 0;
       var itemIndex = i;
       break;
