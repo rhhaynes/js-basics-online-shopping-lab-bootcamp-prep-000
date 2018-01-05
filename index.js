@@ -22,7 +22,7 @@ function viewCart() {
   if (cart.length<1){
     message = message + `Your shopping cart is empty.`;
   } else if (cart.length===1){
-    message = message + `In your cart, you have ${Object.keys(cart[i])} at $${Object.values(cart[i])}.`;
+    message = message + `In your cart, you have ${Object.keys(cart[0])} at $${Object.values(cart[0])}.`;
   } else if (cart.length===2){
     message = message + `In your cart, you have`;
     for (let i=0; i<cart.length; i++){
