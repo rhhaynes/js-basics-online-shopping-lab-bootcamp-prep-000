@@ -59,7 +59,7 @@ function removeFromCart(item) {
     if (item===Object.keys(cart[i])){
       itemNotFound = 0;
       var itemIndex = i;
-      break;
+      //break;
     }
   }
   if (itemNotFound===1){
