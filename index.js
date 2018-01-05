@@ -53,7 +53,7 @@ function total() {
   return currentValue;
 }
 
-function removeFromCart(item) {
+function removeFromCart(item){
   var itemNotFound = 1;
   for (let i=0; i<cart.length; i++){
     if (item===Object.keys(cart[i])){
