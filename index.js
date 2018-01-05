@@ -59,6 +59,7 @@ function removeFromCart(item) {
     if (item===Object.keys(cart[i])){
       cart.splice(i,1);
       itemNotFound = 0;
+      break;
     }
   }
   if (itemNotFound===1){
