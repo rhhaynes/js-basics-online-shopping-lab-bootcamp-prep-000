@@ -12,6 +12,7 @@ function setCart(c) {
 function addToCart(item) {
   var o = {};
   o[item] = Math.floor(Math.random());
+  return o;
 }
 
 function viewCart() {
