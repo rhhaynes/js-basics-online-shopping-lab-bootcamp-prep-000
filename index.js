@@ -25,9 +25,9 @@ function viewCart() {
     message = message + `In your cart, you have`;
     for (let i=0; i<cart.length; i++){
       if (i<cart.length-1){
-        message = message + ``;
+        message = message + ;
       } else {
-        message = message + ``;
+        message = message + `${Object.keys(cart[i])} at ;
       }
     }
   }
