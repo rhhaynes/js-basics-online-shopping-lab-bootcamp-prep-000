@@ -59,15 +59,16 @@ function removeFromCart(item) {
     if (item===Object.keys(cart[i])){
       itemNotFound = 0;
       var itemIndex = i;
-      //break;
+      break;
     }
   }
   if (itemNotFound===1){
     console.log(`That item is not in your cart.`);
   } else {
     cart.splice(itemIndex,1);
+    var newCart = cart;
   }
-  return cart;
+  return newCart;
 }
 
 function placeOrder(cardNumber) {
