@@ -29,7 +29,7 @@ function viewCart() {
       if (i<cart.length-1){
         message = message + ;
       } else {
-        message = message + `${Object.keys(cart[i])} at $${}.`;
+        message = message + `${Object.keys(cart[i])} at $${cart[i][Object.keys(cart[i])]}.`;
       }
     }
   }
