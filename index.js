@@ -57,13 +57,15 @@ function removeFromCart(item) {
   var itemNotFound = 1;
   for (let i=0; i<cart.length; i++){
     if (Object.keys(cart[i])===item){
-      cart.splice(i,1);
       itemNotFound = 0;
+      var itemIndex = i;
       break;
     }
   }
   if (itemNotFound===1){
     console.log(`That item is not in your cart.`);
+  } else {
+    cart.splice(itemIndex,1);
   }
   return cart;
 }
