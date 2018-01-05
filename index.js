@@ -46,7 +46,11 @@ function viewCart() {
 }
 
 function total() {
-  // write your code here
+  var currentValue = 0;
+  for (let i=0; i<cart.length; i++){
+    currentValue = currentValue + parseInt(Object.values(cart[i]));
+  }
+  return currentValue;
 }
 
 function removeFromCart(item) {
