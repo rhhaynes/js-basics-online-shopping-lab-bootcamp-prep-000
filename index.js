@@ -22,14 +22,14 @@ function viewCart() {
   if (cart.length<1){
     message = message + `Your shopping cart is empty.`;
   } else {
-  var message = `In your cart, you have`;
-  for (let i=0; i<cart.length; i++){
-    if (i<cart.length-1){
-      message = message + ``;
-    } else {
-      message = message + ``;
+    message = message + `In your cart, you have`;
+    for (let i=0; i<cart.length; i++){
+      if (i<cart.length-1){
+        message = message + ``;
+      } else {
+        message = message + ``;
+      }
     }
-  }
   }
   console.log(message);
 }
