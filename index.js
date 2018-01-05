@@ -22,14 +22,21 @@ function viewCart() {
   if (cart.length<1){
     message = message + `Your shopping cart is empty.`;
   } else if (cart.length===2){
-    message = message + ``;
+    message = message + `In your cart, you have`;
+    for (let i=0; i<cart.length; i++){
+      if (i<cart.length-1){
+        message = message + ` ${Object.keys(cart[i])} at $${Object.values(cart[i])}`;
+      } else {
+        message = message + ` and ${Object.keys(cart[i])} at $${Object.values(cart[i])}.`;
+      }
+    }
   } else {
     message = message + `In your cart, you have`;
     for (let i=0; i<cart.length; i++){
       if (i<cart.length-1){
-        message = message + ;
+        message = message + ` ${Object.keys(cart[i])} at $${Object.values(cart[i])},`;
       } else {
-        message = message + `${Object.keys(cart[i])} at $${cart[i][Object.keys(cart[i])]}.`;
+        message = message + ` and ${Object.keys(cart[i])} at $${Object.values(cart[i])}.`;
       }
     }
   }
