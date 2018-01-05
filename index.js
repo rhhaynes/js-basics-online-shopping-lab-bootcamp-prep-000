@@ -56,6 +56,7 @@ function total() {
 function removeFromCart(item) {
   var itemNotFound = 1;
   for (let i=0; i<cart.length; i++){
+    console.log(`${item} = ${Object.keys(cart[i])}`);
     if (Object.keys(cart[i])===item){
       cart.splice(i,1);
       itemNotFound = 0;
