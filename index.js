@@ -10,7 +10,8 @@ function setCart(c) {
 }
 
 function addToCart(item) {
- var item = {Math.floor(Math.random())};
+  var o = {};
+  o[item] = Math.floor(Math.random());
 }
 
 function viewCart() {
